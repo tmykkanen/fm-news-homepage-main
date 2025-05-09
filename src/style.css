@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+:root {
+  --clr-neutral-100: hsl(48, 71%, 99%);
+  --clr-neutral-200: hsl(237, 20%, 80%);
+  --clr-neutral-400: hsl(252, 2%, 41%);
+  --clr-neutral-800: hsl(240, 100%, 5%);
+  --clr-neutral-900: hsl(238, 92%, 5%);
+
+  --clr-orange-400: hsl(5, 86%, 63%);
+  --clr-yellow-400: hsl(33, 79%, 61%);
+
+  --clr-body: var(--clr-neutral-400);
+  --clr-heading: var(--clr-neutral-900);
+  --clr-accent-400: var(--clr-orange-400);
+
+  --ff-base: "Inter", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
+
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3rem;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--clr-heading);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  color: var(--clr-body);
+  font-family: var(--ff-base);
+  line-height: 1.6;
+}
