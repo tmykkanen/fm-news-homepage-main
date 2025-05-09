@@ -1,14 +1,30 @@
 {
-  "name": "",
+  "name": "frontend-mentor-news-homepage",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky"
   },
   "dependencies": {
     "astro": "^5.7.12"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-astro": "^1.3.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,astro,html,css}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
